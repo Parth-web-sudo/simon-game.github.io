@@ -1,4 +1,4 @@
-alert("1. Press enter to start the game, watch and listen the sequence carefully,and remember the order and repeat the whole sequence by pressing the button in the same order");
+alert("Tap anywhere to start the game, watch and listen the sequence carefully,and remember the order and repeat the whole sequence by pressing the button in the same order");
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
@@ -37,7 +37,7 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Press Anywhere to Restart");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
